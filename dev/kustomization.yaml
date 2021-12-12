@@ -1,3 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
 resources:
   - node-apps/deployment.yaml
   - node-apps/service.yaml
+images:
+  - name: argocd-app
+    newName: nanajanashia/argocd-app
+    newTag: 1.2
