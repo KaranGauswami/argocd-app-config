@@ -5,4 +5,4 @@ resources:
 images:
   - name: argocd-app
     newName: nanajanashia/argocd-app
-    newTag: 1.2
+    newTag: '1.2'
