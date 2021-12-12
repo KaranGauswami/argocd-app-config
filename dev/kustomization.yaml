@@ -1,0 +1,3 @@
+resources:
+  - node-apps/deployment.yaml
+  - node-apps/service.yaml
