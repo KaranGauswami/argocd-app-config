@@ -1,8 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 resources:
-  - node-apps/deployment.yaml
-  - node-apps/service.yaml
+  - node-apps/sv-main/deployment.yaml
+  - node-apps/sv-main/service.yaml
+  - node-apps/sv-worker/deployment.yaml
 images:
-  - name: argocd-app
-    newName: nanajanashia/argocd-app
+  - name: sv-main
+    newName: karangauswami/sv-main
+    newTag: '1.1'
+  - name: sv-worker
+    newName: karangauswami/sv-worker
     newTag: '1.1'

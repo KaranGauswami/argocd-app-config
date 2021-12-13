@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: sv-worker
-          image: karangauswami/sv-worker:latest
+          image: sv-worker
