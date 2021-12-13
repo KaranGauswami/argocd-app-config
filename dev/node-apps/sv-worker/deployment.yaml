@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sv-worker
+spec:
+  selector:
+    matchLabels:
+      app: sv-worker
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sv-worker
+    spec:
+      containers:
+        - name: sv-worker
+          image: karangauswami/sv-worker:latest
