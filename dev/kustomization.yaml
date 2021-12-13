@@ -6,7 +6,7 @@ resources:
 images:
   - name: sv-main
     newName: karangauswami/sv-main
-    newTag: '1.1'
+    newTag: '1052c16d2eef3c0cb76d2ee41f1e5f59e8ea9ef6'
   - name: sv-worker
     newName: karangauswami/sv-worker
-    newTag: '1.1'
+    newTag: '1052c16d2eef3c0cb76d2ee41f1e5f59e8ea9ef6'
