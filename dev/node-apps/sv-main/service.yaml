@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: sv-main-service
 spec:
+  type: NodePort
   selector:
     app: sv-main
   ports:
   - port: 3000
     protocol: TCP
     targetPort: 3000
+    nodePort: 30001
   
